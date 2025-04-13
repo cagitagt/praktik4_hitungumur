@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="head">
+            <h1 class="title">{{ tittle }}</h1>
+            <a href="/usia/" class="btn">Cek Usia</a>
+        </div>
+
+        <section class="group">
+            <h2>KELOMPOK 1</h2>
+            <div class="member-list">
+                <div class="card">
+                    <p>Cagita Dian A'yunin</p>
+                    <span>233140707111025</span>
+                </div>
+                <div class="card">
+                    <p>Nur Husnil Khotimah H</p>
+                    <span>233140707111026</span>
+                </div>
+                <div class="card">
+                    <p>Nadia Alya Paramitha E</p>
+                    <span>233140707111031</span>
+                </div>
+                <div class="card">
+                    <p>Fredlina Devhania K.</p>
+                    <span>233140707111035</span>
+                </div>
+                <div class="card">
+                    <p>Eshaila Amanda Salju</p>
+                    <span>233140707111041</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

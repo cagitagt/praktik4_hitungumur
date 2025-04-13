@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Usia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/usia.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">{{ tittle }}</h1>
+        <a href="/" class="btn">Kembali ke Home</a>
+        <form method="POST" action="/usia/" class="form">
+            <label for="tahun_lahir">Masukkan Tahun Lahir</label>
+            <input type="number" id="tahun_lahir" name="tahun_lahir" placeholder="Contoh: 2004" required>
+            <button type="submit">Hitung Usia</button>
+        </form>
+
+        {% if usia is not none %}
+            <p class="result">Usia kamu tahun ini adalah <strong>{{ usia }}</strong> tahun</p>
+        {% endif %}
+    </div>
+</body>
+</html>
